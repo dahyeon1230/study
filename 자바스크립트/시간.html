@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시간출력</title>
+</head>
+<body>
+    <h1>자바스크립트 시간</h1>
+    <p id="show"></p>
+    <button type="button" onclick="clock()">지금몇시에요?</button>
+    <script>
+        function clock(){
+            const day=new Date();
+            let time=day.toLocaleString('ko-kr');
+
+            document.getElementById('show').innerHTML=time;
+        }
+    </script>
+</body>
+</html>

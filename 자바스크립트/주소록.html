@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주소록</title>
+    <script defer src="js/list.js"></script>
+</head>
+<body>
+    <form>
+        <p>이름<input type="text" name="name"></p>
+        <p>전화번호:<input type="tel" name="tel"></p>
+        <input type="button" value="저장" onclick="add()">
+        <input type="button" value="리셋" onclick="reset()">
+        <input type="button" value="배경변경" onclick="chane()">
+    </form>
+    <hr>
+    <h3>주소록 목록</h3>
+    <!-- 출력되는 부분 -->
+    <ul id="addlist">
+
+    </ul>
+</body>
+</html>
